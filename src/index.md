@@ -7,7 +7,7 @@ description: This is a cool resume theme for hexo.
 # Resume Title
 resume_title: Jon Snow's Resume
 # Job Applicant Name
-name: Jon Snow
+name: maple
 # Contact
 contact:
   # URL

@@ -2,80 +2,61 @@
 # 语言 （可选）
 lang: zh-cn
 # 网页关键词和描述
-keywords: 简历主题,Hexo主题,简历模板
-description: 这是一个在线简历模板（Hexo博客主题）。
+keywords: 简历,Hexo,龚海生的简历
+description: 龚海生的在线简历。
 # 简历标题
-resume_title: Jon Snow's Resume
+resume_title: Maple's Resume
 # 应聘者姓名
-name: Jon Snow
+name: 龚海生
 # 联系方式
 contact:
-  - icon: fas fa-globe-asia
-    text: https://resume.js.org
-    url: https://resume.js.org/zh-cn/
+  - icon: fas fa-home
+    text: Maples Blog
+    url: http://www.ice-maple.com
+  - icon: fas fa-h-square
+    text: 知乎
+    url: https://www.zhihu.com/people/gonghs-maple/posts
   # 邮箱
   - icon: fas fa-envelope
-    text: your email
-    url:
+    text: maple.haisheng@qq.com
+    url: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=LkNPXkJLAEZbXFxHXW5IQVZDT0dCAE1BQw
   # 电话号码
   - icon: fas fa-phone-alt
-    text: 1xxxxxxxxxx
-    url: tel:10086
+    text: 18065972341
+    url: tel:18065972341
 # PDF下载链接
 download:
   title: 下载本站源码
   icon: fas fa-download fa-fw
-  url: https://github.com/xaoxuu/resume-docs
+  url: https://github.com/gonghs/resume-docs
 ---
 
 {% raw %}
 <grid>
-<avatar><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png"></avatar>
-<h1>Hexo 简历主题</h1>
+<avatar><img src="https://gitee.com/gonghs/image/raw/master/img/20200807164229.png"></avatar>
+<h1>龚海生的简历</h1>
 <center>
-<a href='/'>English</a> | <a href='/zh-cn/'>简体中文</a>
+时光静好，与君语；细水流年，与君同。
+<!-- <a href='/'>English</a> | <a href='/zh-cn/'>简体中文</a> -->
 </center>
 <br>
 </grid>
 {% endraw %}
 
-
-## <i class="fas fa-flag"></i> 开始使用
-
-请直接下载本站的源码，参考源码进行改写。
-
-- 本站源码：https://github.com/xaoxuu/resume-docs
-- 主题源码：https://github.com/xaoxuu/hexo-theme-resume
-
-
 ## <i class="fas fa-user-graduate"></i> 教育背景
 
-**XX大学 X学院 X系 X专业 X年毕业**
-
+**龙岩学院 物理与机电工程学院 电子信息工程 2017年毕业**
 
 ## <i class="fas fa-user-tie"></i> 工作经验
 
+#### 2017.6 ~ 2020.8：厦门海西医药交易中心
 
-#### 2000年 ~ 至今：XX公司
+- 主要负责Java后端开发
+- 在旧架构中也包揽前端工作
 
-- 主要负责XXX
-- 也负责XXX
+## <i class="fas fa-award"></i> 项目经验
 
-
-#### 1900年 ~ 2000年：XX公司
-
-- 主要负责XXX
-- 也负责XXX
-
-#### 1800年 ~ 1900年：XX公司
-
-- 主要负责XXX
-- 也负责XXX
-
-
-## <i class="fas fa-award"></i> 精选项目
-
-
+<!-- 
 {% raw %}
 <btns rounded>
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
@@ -103,7 +84,7 @@ download:
   飞亚达腕能助手
 </a>
 </btns><br>
-{% endraw %}
+{% endraw %} -->
 
 
 ### A项目
@@ -124,68 +105,23 @@ download:
 
 啦啦啦
 
-## <i class="fab fa-github"></i> 开源贡献
+## <i class="fab fa-github"></i> 开源项目
 
 
-### Volantis
+### Auth-System
 
-#### 2017 ~ 至今，一个简约的卡片式Hexo博客主题
+#### 2020.3 ~ 至今，一个简单的权限系统，starter练手项目
 
-- 完全自由的模块化、易于定制化设计
-- 移动端优化
-- 源码：https://github.com/xaoxuu/hexo-theme-volantis
-- 官网：https://volantis.js.org/
-
-### ProHUD
-
-#### 2019/08 ~ 至今，易于定制、接口简单的HUD库
-
-- 使用Swift5编写。
-- 包含顶部通知横幅、弹窗、底部操作表三种使用场景的UI控件。
-- 易于配置UI从而满足公司各业务线的UI要求，接口调用简单明了。
-- 源码：https://github.com/xaoxuu/ProHUD
-
-<fancybox>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot01.png'>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot02.png'>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot03.png'>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot04.png'>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot05.png'>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot06.png'>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot07.png'>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot08.png'>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot09.png'>
-<img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/screenshot10.png'>
-</fancybox>
+- 基于Sringboot，Shiro，Jwt，Mysql，Mybatis-plus，Amaze-ui
+- Springboot starter练手项目
+- 移植了开发至今认为比较好的一些功能
+- 源码：https://github.com/gonghs/auth-system
 
 ## <i class="fas fa-phone-alt"></i> 与我联系
 
-目前状态为：在职，考虑换工作，100年内可到岗。
+目前状态为：已离职，两周内可到岗。
 
-<i class="fas fa-envelope fa-fw"></i> your email
-<i class="fas fa-phone-alt fa-fw"></i> 1xxxxxxxxxx
-
-
-## 主题配置
-
-```yaml
-cdn:
-  # These base libraries cannot be deleted
-  jquery: https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js
-  vue: https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js
-  # When these CDN resources are deleted, local resources are loaded.
-  common: https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-resume@1.0.0/source/js/common.js
-  escape: https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-resume@1.0.0/source/js/css.escape.js
-  smooth_scroll: https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-resume@1.0.0/source/js/smooth-scroll.min.js
-  css: https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-resume@1.0.0/source/css/style.min.css
-  # Optional plug-in: image zoom
-  fancybox:
-    css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
-    js: https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js
-
-# robots meta tag
-robots: noindex,nofollow
-
-# the footer of your site
-copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
-```
+<i class="fas fa-envelope fa-fw"></i> [maple.haisheng@qq.com](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=LkNPXkJLAEZbXFxHXW5IQVZDT0dCAE1BQw)
+<i class="fas fa-phone-alt fa-fw"></i> [18065972341](tel:18065972341)
+<i class="fas fa-home fa-fw"></i> [博客](http://www.ice-maple.com)
+<i class="fas fa-h-square fa-fw"></i> [知乎](https://www.zhihu.com/people/gonghs-maple/posts) 
