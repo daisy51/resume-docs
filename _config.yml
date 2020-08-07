@@ -160,7 +160,7 @@ lazyload:
 deploy:
   type: git
   repo: https://github.com/gonghs/resume-docs.git
-  branch: master
+  branch: deploy
   message: update pages
 
 feed:
