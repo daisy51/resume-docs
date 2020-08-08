@@ -36,7 +36,7 @@ download:
 <avatar><img src="https://gitee.com/gonghs/image/raw/master/img/20200807164229.png"></avatar>
 <h1>龚海生的简历</h1>
 <center>
-时光静好，与君语；细水流年，与君同。
+编码是一门严谨而优雅的艺术。代码写的越急，程序跑得越慢。
 <!-- <a href='/'>English</a> | <a href='/zh-cn/'>简体中文</a> -->
 </center>
 <br>
@@ -87,39 +87,95 @@ download:
 {% endraw %} -->
 
 
-### A项目
+### 省药械集中采购平台
 
-#### 2000/01 ~ 2019/01：于XX公司开发，团队项目，维护至今
+新系统基于SpringBoot，涉及技术：SpringCloud，Nacos，Feign，Kafka，Redis，Swagger，Shiro，Mybatis-Plus，XXL-Job，Mysql，Jsp，Thymeleaf
+旧系统基于SpringMVC，涉及技术：Shiro，Mybatis，Redis，Quartz，Oracle，Jsp，Thymeleaf
 
-啦啦啦
+#### 2020/07 ~ 2020/08: 数据库由Oracle迁至Mysql
 
-### B项目
+修改系统依赖，修改旧分页功能，使用Idea正则重构功能完成大部分函数，语法全局替换。
+引入mybatis-plus并重写代码生成器，增加根据注释生成枚举类的功能，并研究[字段枚举类型的可行性方案](http://www.ice-maple.com/2020/06/23/Springboot%20Enum/)。
+参与部分业务及存储过程迁移，包含merge语法替换，游标语法替换，动态sql等。
 
-#### 1900/01 ~ 2000/01：于XX公司开发
+#### 2020/06 ~ 2020/06: 系统多租户改造
 
-啦啦啦
+由于各省市平台较多，数据量并不大，使用多租户方式合并数据解决数据库资源浪费的问题。
+参考mybatis-plus多租户插件实现多租户改造，无侵入式统一修改sql。
 
-### C项目
+#### 2020/05 ~ 2020/06: 接入单点登录
 
-#### 1800/01 ~ 1900/01：于XX公司开发
+由于业务变更，需要统一登录入口，用户信息，需要将原系统改为使用token控制登录。
+系统维持shiro登录，编写拦截器，校验token，同步用户企业信息并进行登录操作，协同单点登录方迁移数据。
+整理系统Readme文档。
 
-啦啦啦
+#### 2020/03 ~ 2020/05: 系统架构改造
+
+将基于SpringMVC的项目改造为SpringBoot项目，微服务化并接入Nacos配置中心。
+依赖变更，升级，将xml配置替换为Java Config配置，接入Kafka，Feign，Swagger，替换分页定时任务实现。
+解决[Jsp页面公共头无法引入的问题](http://www.ice-maple.com/2019/12/06/springboot%E9%85%8D%E7%BD%AEjsp-config%E7%9A%84%E6%8E%A2%E7%A9%B6/)。
+
+#### 2019/01 ~ 2019/04: 文件迁移
+
+背景：项目本身时间跨度较大，并非同一批开发人员研发，并且现有功能涉及模块众多，数据量较大，各功能数据库存储差异较大（有些文件还在Clob字段中需要解析）。
+编写工具，分模块将文件数据由阿里云迁至公司文件服务器，使用JDK8 CompeteFuture多线程分页执行，提高效率。（>_<之后又迁回去了，还是我）
+
+#### 2017/06 ~ 2018/05: 前后端不分离阶段开发
+
+初期权限设计。
+利用Aop实现系统业务日志统一存储。
+熟悉JDK8 Api并修改BaseController，暴露函数式接口参数，减少冗余代码。
+在开发过程中发现原有的开发流程中表格服务和上传服务代码过于冗余。
+研究Datatables，WebUploader并封装适应本系统的前端直传组件，和表单组件，提供相对完善的文档。
+为了便于维护引入Vue.js使前端代码模板化（而不是使用字符串拼接出来），以后台配置方式维护前端字段渲染方式，校验方式，必填关系，并由于字段存在上传按钮，提供了基于Vue.js的上传组件。
+
+### 国家药械联合采购平台
+
+基于SpringBoot，涉及技术：SpringCloud，Nacos，Feign，Kafka，Redis，Swagger，Shiro，Mybatis-Plus，XXL-Job，Mysql
+
+#### 2019/07 ~ 2019/09: 公共组件开发
+
+提供分布式锁starter包。
+提供[用户上下文注入解决方案](http://www.ice-maple.com/2019/08/20/springboot%E7%94%A8%E6%88%B7%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5/)starter包。
+解决[SpringBoot集合校验](http://www.ice-maple.com/2019/07/25/springboot%E5%A4%84%E7%90%86%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E6%A0%A1%E9%AA%8C/)问题。
+提供数仓参数拼接工具。
+提供缓存工具类和支持SpringEL表达式的缓存注解。
+封装基于Shiro的starter包。
+提供Dozer工具类。
+提供统一文件上传接口。
+
+### 2.0系统开发
+
+基于SpringBoot，涉及技术：Springboot，Dubbo，Mybatis，Mysql，Redis，Quartz
+
+#### 2019/01 ~ 2019/01: 业务数据初始化
+
+由于数据处理量相对较大，响应较慢，采用异步执行，前端轮询的方式等待响应。
+使用多线程优化执行效率。
+
+### 出行项目
+
+基于SpringMVC，涉及技术：SpringMVC，Dubbo，Memcached，Mybatis，JWT，微信登录，微信支付
+
+#### 单点登录服务开发
+
+编写统一登录服务，存储用户信息，利用JWT调取微信公众号登录存储OpenId，UnionId，并生成统一Token供其他服务鉴权。
+编写拦截器在维持子业务不受影响的情况下交易token实现登录。
 
 ## <i class="fab fa-github"></i> 开源项目
-
 
 ### Auth-System
 
 #### 2020.3 ~ 至今，一个简单的权限系统，starter练手项目
 
-- 基于Sringboot，Shiro，Jwt，Mysql，Mybatis-plus，Amaze-ui
-- Springboot starter练手项目
-- 移植了开发至今认为比较好的一些功能
+- 基于SpringBoot，Shiro，Jwt，Mysql，Mybatis-plus，Amaze-ui
+- SpringBoot starter练手项目
+- 移植了开发至今认为比较好的一些项目实践
 - 源码：https://github.com/gonghs/auth-system
 
 ## <i class="fas fa-phone-alt"></i> 与我联系
 
-目前状态为：已离职，两周内可到岗。
+目前状态为：已离职，月内到岗。
 
 <i class="fas fa-envelope fa-fw"></i> [maple.haisheng@qq.com](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=LkNPXkJLAEZbXFxHXW5IQVZDT0dCAE1BQw)
 <i class="fas fa-phone-alt fa-fw"></i> [18065972341](tel:18065972341)
