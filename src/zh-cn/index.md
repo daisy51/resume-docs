@@ -146,7 +146,7 @@ download:
 
 ### 2.0系统开发
 
-基于SpringBoot，涉及技术：Springboot，Dubbo，Mybatis，Mysql，Redis，Quartz
+基于SpringBoot，涉及技术：SpringCloud，Dubbo，Mybatis，Mysql，Redis，Quartz
 
 #### 2019/01 ~ 2019/01: 业务数据初始化
 
@@ -155,12 +155,12 @@ download:
 
 ### 出行项目
 
-基于SpringMVC，涉及技术：SpringMVC，Dubbo，Memcached，Mybatis，JWT，微信登录，微信支付
+基于SpringMVC，涉及技术：Dubbo，Memcached，Mybatis，JWT，微信登录，微信支付
 
 #### 单点登录服务开发
 
 编写统一登录服务，存储用户信息，利用JWT调取微信公众号登录存储OpenId，UnionId，并生成统一Token供其他服务鉴权。
-编写拦截器在维持子业务不受影响的情况下交易token实现登录。
+编写拦截器在维持子业务不受影响的情况下校验token实现登录。
 
 ## <i class="fab fa-github"></i> 开源项目
 
