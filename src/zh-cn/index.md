@@ -26,9 +26,9 @@ contact:
     url: tel:18065972341
 # PDF下载链接
 download:
-  title: 下载本站源码
+  title: PDF下载
   icon: fas fa-download fa-fw
-  url: https://github.com/gonghs/resume-docs
+  url: http://www.ice-maple.com/uploads/Maple's Resume.pdf
 ---
 
 {% raw %}
@@ -159,7 +159,7 @@ download:
 
 #### 单点登录服务开发
 
-编写统一登录服务，存储用户信息，利用JWT调取微信公众号登录存储OpenId，UnionId，并生成统一Token供其他服务鉴权。
+编写统一登录服务，存储用户信息，调取微信公众号登录存储OpenId，UnionId，并利用JWT生成统一Token供其他服务鉴权。
 编写拦截器在维持子业务不受影响的情况下校验token实现登录。
 
 ## <i class="fab fa-github"></i> 开源项目
